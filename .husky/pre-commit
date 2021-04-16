@@ -2,4 +2,5 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npm test
-lint-staged
+npm test
+npm test
