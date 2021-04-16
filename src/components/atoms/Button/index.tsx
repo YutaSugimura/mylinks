@@ -1,7 +1,7 @@
 import React from 'react';
 import { Pressable, StyleSheet } from 'react-native';
-import { Color, FontWeight } from '../../types/styles';
-import { COLORS } from '../../common/styleguide';
+import { Color, FontWeight } from '../../../types/styles';
+import { COLORS } from '../../../common/styleguide';
 import { Typography } from '../Typography';
 
 const styles = StyleSheet.create({
@@ -44,7 +44,7 @@ export const Button: React.FC<Props> = ({
     width: width ? width : 300,
     height: height ? height : 46,
     backgroundColor: backgroundColor ? backgroundColor : COLORS.WHITE,
-    borderColor: borderColor ? borderColor : COLORS.BUTTON_BORDER,
+    borderColor: borderColor ? borderColor : COLORS.FONT_BLACK,
     borderWidth: borderWidth ? borderWidth : 1,
     borderRadius: borderRadius ? borderRadius : 0,
   };

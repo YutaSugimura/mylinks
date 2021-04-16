@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
-import { Color, FontWeight } from '../../types/styles';
-import { FONT_DEFAULT_SIZE, COLORS } from '../../common/styleguide';
+import { Color, FontWeight } from '../../../types/styles';
+import { FONT_DEFAULT_SIZE, COLORS } from '../../../common/styleguide';
 
 const styles = StyleSheet.create({
   container: {

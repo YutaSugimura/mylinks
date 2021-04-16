@@ -33,11 +33,11 @@ exports[`renders correctly atoms/Typography/AnchorLink 1`] = `
         "textDecorationLine": "underline",
       },
       Object {
-        "color": undefined,
+        "color": "#1C1C1C",
         "fontSize": 14,
         "fontWeight": "400",
         "lineHeight": 24,
-        "textDecorationColor": undefined,
+        "textDecorationColor": "#1C1C1C",
       },
     ]
   }

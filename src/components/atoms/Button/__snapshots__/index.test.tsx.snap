@@ -22,7 +22,7 @@ exports[`renders correctly atoms/Button (default) 1`] = `
       },
       Object {
         "backgroundColor": "#FFF",
-        "borderColor": undefined,
+        "borderColor": "#1C1C1C",
         "borderRadius": 0,
         "borderWidth": 1,
         "height": 46,
