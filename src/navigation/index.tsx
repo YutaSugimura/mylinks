@@ -1,26 +1,26 @@
 import React from 'react';
-import { RouteProp } from '@react-navigation/core';
-import { createBottomTabNavigator, BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
-import HomeScreen from '../screens/home';
-import SettingScreen from '../screens/setting';
+import { NavigationProp, RouteProp } from '@react-navigation/core';
+import { createStackNavigator } from '@react-navigation/stack';
+import AuthStack from './auth';
+import AppStack from './app';
 
-export type TabParamList = {
-  Home: undefined;
-  Setting: undefined;
+export type RootParamList = {
+  Auth: undefined;
+  App: undefined;
 };
 
-export type TabScreen = keyof TabParamList;
-export type TabNavigationProp<T extends TabScreen> = BottomTabNavigationProp<TabParamList, T>;
-export type TabRouteProp<T extends TabScreen> = RouteProp<TabParamList, T>;
+export type RootScreen = keyof RootParamList;
+export type RootNavigationProp<T extends RootScreen> = NavigationProp<RootParamList, T>;
+export type RootRouteProp<T extends RootScreen> = RouteProp<RootParamList, T>;
 
-const Tab = createBottomTabNavigator<TabParamList>();
+const RootStack = createStackNavigator<RootParamList>();
 
 const Navigation: React.VFC = () => {
   return (
-    <Tab.Navigator initialRouteName="Home">
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Setting" component={SettingScreen} />
-    </Tab.Navigator>
+    <RootStack.Navigator>
+      <RootStack.Screen name="Auth" component={AuthStack} />
+      <RootStack.Screen name="App" component={AppStack} />
+    </RootStack.Navigator>
   );
 };
 
