@@ -18,8 +18,8 @@ const RootStack = createStackNavigator<RootParamList>();
 const Navigation: React.VFC = () => {
   return (
     <RootStack.Navigator>
-      <RootStack.Screen name="Auth" component={AuthStack} />
-      <RootStack.Screen name="App" component={AppStack} />
+      <RootStack.Screen name="Auth" component={AuthStack} options={{ headerShown: false }} />
+      <RootStack.Screen name="App" component={AppStack} options={{ headerShown: false }} />
     </RootStack.Navigator>
   );
 };
